@@ -1,9 +1,9 @@
-import TabSection from './tab/TabSection';
-import CarouselSectionList from './CarouselSectionList';
-import { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { CenterContainer } from '../utils/styles/common';
-import Modal from './Modal';
+import TabSection from "./tab/TabSection";
+import CarouselSectionList from "./CarouselSectionList";
+import { useEffect, useState } from "react";
+import styled from "styled-components";
+import { CenterContainer } from "../utils/styles/common";
+import Modal from "./Modal";
 
 const MainPage = (props) => {
   const [modalState, setModalState] = useState(false);
@@ -12,7 +12,7 @@ const MainPage = (props) => {
 
   useEffect(() => {
     fetch(
-      'https://h3rb9c0ugl.execute-api.ap-northeast-2.amazonaws.com/develop/baminchan/detail'
+      "https://h3rb9c0ugl.execute-api.ap-northeast-2.amazonaws.com/develop/baminchan/detail"
     )
       .then((res) => res.json())
       .then((response) => {
@@ -35,7 +35,7 @@ const MainPage = (props) => {
       {modalState && (
         <ModalBackground>
           <ModalContainer>
-            <Modal product={modalData} />
+            <Modal id="modal" product={modalData} />
             <button onClick={() => setModalState(false)}>X</button>
           </ModalContainer>
         </ModalBackground>
