@@ -3,9 +3,9 @@ import StateProvider from "./components/StateProvider";
 import { createGlobalStyle } from "styled-components";
 import { ThemeProvider } from "styled-components";
 import theme from "./components/componentUtils/styles/theme";
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Callback from "./components/Callback";
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./components/ErrorPage";
 
 export const GlobalStyle = createGlobalStyle`
   *{
@@ -24,9 +24,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// / = StateProvider
-// /callback = Callback
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -38,7 +35,6 @@ function App() {
           <Route path="/error" component={ErrorPage} />
         </Switch>
       </BrowserRouter>
-      {/* <StateProvider /> */}
     </ThemeProvider>
   );
 }

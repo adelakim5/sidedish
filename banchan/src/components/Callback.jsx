@@ -11,7 +11,6 @@ const Callback = ({ history, location }) => {
         localStorage.setItem("jwt_token", data.jwt_token);
         history.push("/");
       } catch (error) {
-        console.log(error);
         history.push("/error"); // api 요청 실패 시 에러 핸들링 페이지
       }
     };

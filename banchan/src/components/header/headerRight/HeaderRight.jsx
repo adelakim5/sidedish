@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import IconButton from "../../componentUtils/button/IconButton";
 import { CenterContainer } from "../../componentUtils/styles/common";
-// import Callback from "../../Callback";
+// import { Link } from "react-router-dom";
 
 const HeaderRight = (props) => {
   const tempFn = () => {

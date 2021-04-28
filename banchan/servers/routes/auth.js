@@ -28,9 +28,7 @@ router.post("/auth", async (req, res) => {
     },
   });
 
-  //   console.log(data);
   const jwt_token = jwt.sign({ login: data.login, id: data.id }, "ajaTest");
-  console.log(jwt_token);
 
   return res.json({ jwt_token });
 });
