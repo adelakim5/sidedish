@@ -1,18 +1,22 @@
-import styled from 'styled-components';
-import IconButton from '../../componentUtils/button/IconButton';
-import { CenterContainer } from '../../componentUtils/styles/common';
+import styled from "styled-components";
+import IconButton from "../../componentUtils/button/IconButton";
+import { CenterContainer } from "../../componentUtils/styles/common";
+// import Callback from "../../Callback";
 
 const HeaderRight = (props) => {
   const tempFn = () => {
-    console.log('hello');
+    console.log("hello");
   };
+
   return (
     <HeaderRightDiv>
       <SearchBox>
         <input />
         <IconButton type="SEARCH" fn={tempFn} />
       </SearchBox>
-      <StyledSpan>로그인</StyledSpan>
+      <a href="https://github.com/login/oauth/authorize?client_id=4a408cfdbefb7d2edba7&redirect_uri=http://localhost:3000/callback">
+        <StyledSpan>로그인</StyledSpan>
+      </a>
       <StyledSpan>장바구니</StyledSpan>
     </HeaderRightDiv>
   );
