@@ -83,7 +83,8 @@ reallyawesome-jennyrousel: "^0.1.9"
 
 ### 🌳 [Component Tree Diagram 바로가기](https://app.diagrams.net/#G1uyqnq8syh-lnBk6CGGXGKQaswJ3eIzb6)
 
-![](https://i.imgur.com/oV82Vv4.jpg)
+![](https://i.imgur.com/oV82Vv4.jpg)  
+📌 `server/` 위치가 `banchan/` 하위로 이동되었음
 
 ## Usage
 
